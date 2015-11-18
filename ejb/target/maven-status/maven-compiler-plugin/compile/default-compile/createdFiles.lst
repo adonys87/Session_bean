@@ -1,0 +1,10 @@
+br/com/dextra/treinamento/model/domain/Comentario.class
+br/com/dextra/treinamento/model/service/TesteStatelessLocal.class
+br/com/dextra/treinamento/model/service/PostServiceLocal.class
+br/com/dextra/treinamento/model/service/PostServiceImpl.class
+br/com/dextra/treinamento/model/service/TesteStatelessImpl.class
+br/com/dextra/treinamento/model/domain/Categoria.class
+br/com/dextra/treinamento/model/service/TesteStatefulLocal.class
+br/com/dextra/treinamento/model/service/TesteStatefulImpl.class
+br/com/dextra/treinamento/model/domain/Post.class
+br/com/dextra/treinamento/model/domain/Usuario.class
