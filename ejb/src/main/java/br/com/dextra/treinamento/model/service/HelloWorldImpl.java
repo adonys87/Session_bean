@@ -6,8 +6,8 @@ import javax.ejb.Stateless;
 public class HelloWorldImpl implements HelloWorldLocal{
 
 	@Override
-	public void sayHello() {
-		
+	public String sayHello() {
+		return "Hello world";
 		
 	}
 

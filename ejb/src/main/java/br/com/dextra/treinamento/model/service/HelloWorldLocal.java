@@ -2,7 +2,8 @@ package br.com.dextra.treinamento.model.service;
 
 import javax.ejb.Local;
 
-@Local
+@Local //Anotação do EJB 
 public interface HelloWorldLocal {
-	public void sayHello();
+	
+	public String sayHello();
 }
