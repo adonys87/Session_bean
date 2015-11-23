@@ -9,6 +9,7 @@ br/com/dextra/treinamento/model/domain/Comentario.class
 br/com/dextra/treinamento/model/service/PostServiceLocal.class
 br/com/dextra/treinamento/model/service/PostServiceImpl.class
 br/com/dextra/treinamento/model/service/SomaLocal.class
+br/com/dextra/treinamento/model/domain/GenericInterceptor.class
 br/com/dextra/treinamento/model/service/TesteStatefulLocal.class
 br/com/dextra/treinamento/model/service/TesteStatefulImpl.class
 br/com/dextra/treinamento/model/domain/Post.class

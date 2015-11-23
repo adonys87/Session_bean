@@ -18,7 +18,14 @@
         	<h:commandButton value="Stateless" action="#{testarSessionBeanMB.testarStateless}" />
         	<h:commandButton value="Stateful" action="#{testarSessionBeanMB.testarStateful}" />
         	<h:commandButton value="HelloWorld" action="#{helloWorldMB.sayHelloMB}" />
+        	
+        </h:form>
+        <h:form>
+        	<h:inputText id= "valor1" value ="#{somaMB.valor1}"> </h:inputText>
+        	<h:inputText id= "valor2" value ="#{somaMB.valor2}"> </h:inputText>
         	<h:commandButton value="Soma" action="#{somaMB.chamada}" />
+        	<br/>
+        	<h:outputText id="resultado" value ="#{somaMB.resultado}"></h:outputText>
         </h:form>
     </h:body>
 </html>

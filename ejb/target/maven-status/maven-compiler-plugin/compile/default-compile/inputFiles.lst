@@ -12,3 +12,4 @@
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/Usuario.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatelessLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/Post.java
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/GenericInterceptor.java

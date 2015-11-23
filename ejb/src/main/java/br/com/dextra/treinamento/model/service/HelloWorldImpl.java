@@ -6,14 +6,11 @@ import javax.ejb.Stateless;
 
 @Stateless
 public class HelloWorldImpl implements HelloWorldLocal{
-	@PostConstruct
+	@PostConstruct //executado dps de criar o EJB 
 	public void postConstruct(){
 		System.out.println("postConstruct");
 	}
-	@PostActivate
-	public void postActivate(){
-		System.out.println("postActivate");
-	}
+	
 	
 	@Override
 	public String sayHello() {
