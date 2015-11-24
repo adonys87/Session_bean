@@ -1,17 +1,23 @@
 package br.com.dextra.treinamento.model.service;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.interceptor.Interceptors;
 
-import br.com.dextra.treinamento.model.domain.GenericInterceptor;
+import br.com.dextra.treinamento.model.domain.Registro;
 
 @Stateless
-@Interceptors(value=GenericInterceptor.class)
-public class SomaImpl implements SomaLocal{
-	
-	@Override
+public class SomaImpl implements SomaLocal {
+
+	@EJB
+	private PersistenceServiceLocal service;
+
 	public int soma(int a, int b) {
-		return a + b;		 
+		Registro registro = new Registro();
+		registro.setValor1(a);
+		registro.setValor2(b);
+
+		service.getEntityManager().persist(registro);
+		return a + b;
 	}
 
 }

@@ -3,6 +3,8 @@ package br.com.dextra.treinamento.model.service;
 import javax.annotation.PostConstruct;
 import javax.ejb.PostActivate;
 import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 @Stateless
 public class HelloWorldImpl implements HelloWorldLocal{
@@ -10,6 +12,8 @@ public class HelloWorldImpl implements HelloWorldLocal{
 	public void postConstruct(){
 		System.out.println("postConstruct");
 	}
+	
+
 	
 	
 	@Override

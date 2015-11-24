@@ -5,7 +5,6 @@ import javax.faces.bean.RequestScoped;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import br.com.dextra.treinamento.model.service.SomaImpl;
 import br.com.dextra.treinamento.model.service.SomaLocal;
 
 
@@ -18,6 +17,7 @@ public class SomaMB {
 	private int valor1;
 	private int valor2;
 	private int resultado;
+	
 	public int getResultado() {
 		return resultado;
 	}
@@ -49,7 +49,7 @@ public class SomaMB {
 	
 	
 	public void chamada(){
-		System.out.println("Metodos chamado no somaMB "+service.soma(valor1, valor2));
+		System.out.println("Metodos chamado no somaMB [chamada]");
 		resultado = service.soma(valor1, valor2);
 	}
 }
