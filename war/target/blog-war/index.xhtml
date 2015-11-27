@@ -18,6 +18,11 @@
         	<h:commandButton value="Stateless" action="#{testarSessionBeanMB.testarStateless}" />
         	<h:commandButton value="Stateful" action="#{testarSessionBeanMB.testarStateful}" />
         	<h:commandButton value="HelloWorld" action="#{helloWorldMB.sayHelloMB}" />
+        	<br/>
+        	<h:inputText id= "Valor" value ="#{helloWorldMB.registro.valor1}"> </h:inputText>
+        	<h:inputText id= "Valor2" value ="#{helloWorldMB.registro.valor2}"> </h:inputText>
+        	<h:commandButton value="Timer" action="#{helloWorldMB.agendar}" />
+        	
         	
         </h:form>
         <h:form>
@@ -26,8 +31,13 @@
         	<h:commandButton value="Soma" action="#{somaMB.chamada}" />
         	<br/>
         	<h:outputText id="resultado" value ="#{somaMB.resultado}"></h:outputText>
+        	<br/>
+        	
         </h:form>
         <br/>
-        <h:commandButton value="Enviar Mensagem" action="#{messageMB.enviarMensagem}" />
+        <h:form>
+        <h:commandButton value="Enviar Mensagem" action="#{messagemMB.enviarMensagem}" />
+        </h:form>
+       
     </h:body>
 </html>

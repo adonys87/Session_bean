@@ -1,5 +1,7 @@
 package br.com.dextra.treinamento.controller.bean;
 
+import java.util.Calendar;
+
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
@@ -7,28 +9,62 @@ import javax.faces.bean.RequestScoped;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
+import br.com.dextra.treinamento.model.domain.Registro;
 import br.com.dextra.treinamento.model.service.HelloWorldLocal;
+import br.com.dextra.treinamento.timer.TimerServiceLocal;
 
 @ManagedBean(name = "helloWorldMB")
 @RequestScoped
 public class HelloWorldMB {
-	//variavel que aponta para a interface do Session Beans
-	@EJB //usado no lugar do InicialContext para "dar" new no service.
+	// variavel que aponta para a interface do Session Beans
+	@EJB
+	// usado no lugar do InicialContext para "dar" new no service.
 	private HelloWorldLocal service;
+
+	@EJB
+	private TimerServiceLocal timer;
+
+	private String valor;
+	private Registro registro;
+	
 	
 
-		public HelloWorldMB() {
-//		try {
-//			InitialContext ctx = new InitialContext();
-//			//Forma de carregar 
-//			service = (HelloWorldLocal)ctx.lookup("blog/HelloWorldImpl/local");
-//		} catch (NamingException e) {
-//			System.out.println("Erro ao carregar EJB!!!");
-//		}
+	public Registro getRegistro() {
+		return registro;
+	}
+	public void setRegistro(Registro registro) {
+		this.registro = registro;
+	}
+	
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+
+	public HelloWorldMB() {
+		// try {
+		// InitialContext ctx = new InitialContext();
+		// //Forma de carregar
+		// service = (HelloWorldLocal)ctx.lookup("blog/HelloWorldImpl/local");
+		// } catch (NamingException e) {
+		// System.out.println("Erro ao carregar EJB!!!");
+		// }
+		registro = new Registro();
 	}
 
 	public void sayHelloMB() {
 		service.sayHello();
 		System.out.println("Hello World");
+	}
+
+	public void agendar() {
+
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.MINUTE, 1);
+
+		timer.agendarExecucao(cal.getTime(), registro);
 	}
 }
