@@ -2,3 +2,4 @@ br/com/dextra/treinamento/controller/bean/HelloWorldMB.class
 br/com/dextra/treinamento/controller/bean/TestarSessionBeanMB.class
 br/com/dextra/treinamento/controller/bean/SomaMB.class
 br/com/dextra/treinamento/controller/bean/ListarPostsMB.class
+br/com/dextra/treinamento/controller/bean/MessageMB.class

@@ -2,6 +2,8 @@ br/com/dextra/treinamento/model/service/HelloWorldLocal.class
 br/com/dextra/treinamento/model/service/TesteStatelessLocal.class
 br/com/dextra/treinamento/model/service/TesteStatelessImpl.class
 br/com/dextra/treinamento/model/service/HelloWorldImpl.class
+br/com/dextra/treinamento/jms/BlogQueueLocal.class
+br/com/dextra/treinamento/jms/BlogQueueImpl.class
 br/com/dextra/treinamento/model/domain/Categoria.class
 br/com/dextra/treinamento/model/domain/Registro.class
 br/com/dextra/treinamento/model/service/SomaImpl.class
@@ -10,6 +12,7 @@ br/com/dextra/treinamento/model/domain/Comentario.class
 br/com/dextra/treinamento/model/service/PostServiceLocal.class
 br/com/dextra/treinamento/model/service/PostServiceImpl.class
 br/com/dextra/treinamento/model/service/SomaLocal.class
+br/com/dextra/treinamento/jms/BlogQueueConsumer.class
 br/com/dextra/treinamento/model/domain/GenericInterceptor.class
 br/com/dextra/treinamento/model/service/PersistenceServiceLocal.class
 br/com/dextra/treinamento/model/service/PersistenceServiceImpl.class

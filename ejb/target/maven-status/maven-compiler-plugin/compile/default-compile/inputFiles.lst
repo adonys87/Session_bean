@@ -1,13 +1,16 @@
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/BlogQueueLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/Registro.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/Categoria.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/SomaImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PersistenceServiceLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PersistenceServiceImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatefulLocal.java
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/BlogQueueConsumer.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/HelloWorldImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/SomaLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/Comentario.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatelessImpl.java
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/BlogQueueImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PostServiceImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PostServiceLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatefulImpl.java
