@@ -1,5 +1,6 @@
 package br.com.dextra.treinamento.controller.bean;
 
+import java.net.URL;
 import java.util.Calendar;
 
 import javax.annotation.PostConstruct;
@@ -8,10 +9,15 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import javax.xml.namespace.QName;
+import javax.xml.rpc.Service;
+import javax.xml.rpc.ServiceException;
+import javax.xml.rpc.ServiceFactory;
 
 import br.com.dextra.treinamento.model.domain.Registro;
 import br.com.dextra.treinamento.model.service.HelloWorldLocal;
 import br.com.dextra.treinamento.timer.TimerServiceLocal;
+import br.com.dextra.treinamento.webservice.WebServiceInterface;
 
 @ManagedBean(name = "helloWorldMB")
 @RequestScoped
@@ -67,4 +73,30 @@ public class HelloWorldMB {
 
 		timer.agendarExecucao(cal.getTime(), registro);
 	}
+	public void invocarWebService(){
+//		//URL de acesso ao Web service.
+//		String wsdURL = "http://localhost:8080/blog-ejb-1.0-SNAPSHOT/WebServiceImplService/WebServiceImpl?wsdl";
+//		String namespace="http://webservice.treinamento.dextra.com.br";
+//		String serviceName="WebServiceImplService";
+//		String portName = "WebServiceImplPort";
+//		
+//		QName serviceQName = new QName(namespace, serviceName);
+//		
+//		try {
+//			System.out.println("Criando um Service Factory ...");
+//			ServiceFactory factory = ServiceFactory.newInstance();
+//			System.out.println("Criando um Service ...");
+//			Service webService=factory.createService(new URL(wsdURL), serviceQName);
+//			System.out.println("Servico webservice criado com sucesso");
+//			
+//			webService.getPort(new QName(namespace,portName ), WebServiceInterface.class);
+//			
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		
+	}
+	
 }
