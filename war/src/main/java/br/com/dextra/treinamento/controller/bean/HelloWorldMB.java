@@ -74,27 +74,27 @@ public class HelloWorldMB {
 		timer.agendarExecucao(cal.getTime(), registro);
 	}
 	public void invocarWebService(){
-//		//URL de acesso ao Web service.
-//		String wsdURL = "http://localhost:8080/blog-ejb-1.0-SNAPSHOT/WebServiceImplService/WebServiceImpl?wsdl";
-//		String namespace="http://webservice.treinamento.dextra.com.br";
-//		String serviceName="WebServiceImplService";
-//		String portName = "WebServiceImplPort";
-//		
-//		QName serviceQName = new QName(namespace, serviceName);
-//		
-//		try {
-//			System.out.println("Criando um Service Factory ...");
-//			ServiceFactory factory = ServiceFactory.newInstance();
-//			System.out.println("Criando um Service ...");
-//			Service webService=factory.createService(new URL(wsdURL), serviceQName);
-//			System.out.println("Servico webservice criado com sucesso");
-//			
-//			webService.getPort(new QName(namespace,portName ), WebServiceInterface.class);
-//			
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		//URL de acesso ao Web service.
+		String wsdURL = "http://localhost:8080/blog-ejb-1.0-SNAPSHOT/WebServiceImplService/WebServiceImpl?wsdl";
+		String namespace="http://webservice.treinamento.dextra.com.br";
+		String serviceName="WebServiceImplService";
+		String portName = "WebServiceImplPort";
+		
+		QName serviceQName = new QName(namespace, serviceName);
+		
+		try {
+			System.out.println("Criando um Service Factory ...");
+			ServiceFactory factory = ServiceFactory.newInstance();
+			System.out.println("Criando um Service ...");
+			Service webService=factory.createService(new URL(wsdURL), serviceQName);
+			System.out.println("Servico webservice criado com sucesso");
+			
+			webService.getPort(new QName(namespace,portName ), WebServiceInterface.class);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 	}

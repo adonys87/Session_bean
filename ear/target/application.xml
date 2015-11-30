@@ -10,7 +10,7 @@
   <module>
     <web>
       <web-uri>blog-war-1.0-SNAPSHOT.war</web-uri>
-      <context-root>blog</context-root>
+      <context-root>/blog</context-root>
     </web>
   </module>
 </application>
