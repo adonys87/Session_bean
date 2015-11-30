@@ -2,6 +2,8 @@ package br.com.dextra.treinamento.jms;
 
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
+import javax.interceptor.AroundInvoke;
+import javax.interceptor.InvocationContext;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
@@ -31,5 +33,12 @@ public class BlogQueueConsumer implements MessageListener {
 			throw new RuntimeException(e);
 		}
 	}
-
+	//Interceptador
+	@AroundInvoke
+	public Object  interceptadorMDB(InvocationContext ctx) throws Exception{
+		System.out.println("Interceptando....");
+		Object flow = ctx.proceed();//Metodo que manda processar a fila de mensagem.
+		System.out.println("Interceptação apos inicializacao (Posteriormente)");
+		return flow;
+	}
 }

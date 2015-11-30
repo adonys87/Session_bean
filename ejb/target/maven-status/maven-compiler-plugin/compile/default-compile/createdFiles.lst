@@ -1,7 +1,9 @@
+br/com/dextra/treinamento/jms/FilaJoanConsumer.class
 br/com/dextra/treinamento/model/service/HelloWorldLocal.class
 br/com/dextra/treinamento/model/service/HelloWorldImpl.class
 br/com/dextra/treinamento/jms/BlogQueueLocal.class
 br/com/dextra/treinamento/jms/BlogQueueImpl.class
+br/com/dextra/treinamento/jms/FilaJoanImpl.class
 br/com/dextra/treinamento/model/domain/Usuario.class
 br/com/dextra/treinamento/model/service/PostServiceLocal.class
 br/com/dextra/treinamento/model/service/SomaLocal.class
@@ -23,3 +25,4 @@ br/com/dextra/treinamento/webservice/WebServiceInterface.class
 br/com/dextra/treinamento/model/service/PersistenceServiceImpl.class
 br/com/dextra/treinamento/model/service/TesteStatefulImpl.class
 br/com/dextra/treinamento/model/domain/Post.class
+br/com/dextra/treinamento/jms/FilaJoanLocal.class

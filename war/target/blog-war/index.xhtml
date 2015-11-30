@@ -22,6 +22,7 @@
         	<h:inputText id= "Valor" value ="#{helloWorldMB.registro.valor1}"> </h:inputText>
         	<h:inputText id= "Valor2" value ="#{helloWorldMB.registro.valor2}"> </h:inputText>
         	<h:commandButton value="Timer" action="#{helloWorldMB.agendar}" />
+        	<br/>
         	<h:commandButton value="Web Server" action="#{helloWorldMB.invocarWebService}" />
         	<br/>       	
         	
@@ -35,8 +36,12 @@
         	<br/>        	
         </h:form>
         <br/>
+        
         <h:form>
         <h:commandButton value="Enviar Mensagem" action="#{messagemMB.enviarMensagem}" />
+        <br/>
+        <h:inputText id= "msg" label="Digite algo: " value ="#{messagemMB.msg}"> </h:inputText>
+        <h:commandButton value="Enviar Mensagem (Joan)" action="#{messagemMB.usandoFilaJoan}" />
         </h:form>
        
     </h:body>

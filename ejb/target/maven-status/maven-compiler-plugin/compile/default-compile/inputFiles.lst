@@ -1,4 +1,5 @@
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/webservice/WebServiceInterface.java
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/FilaJoanLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/webservice/WebServiceImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatefulLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/HelloWorldImpl.java
@@ -17,9 +18,11 @@
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/SomaImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PersistenceServiceLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PersistenceServiceImpl.java
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/FilaJoanConsumer.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/BlogQueueConsumer.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PostServiceImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatefulImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/HelloWorldLocal.java
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/FilaJoanImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatelessLocal.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/Post.java
