@@ -18,5 +18,28 @@
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>/faces/*</url-pattern>
 	</servlet-mapping>
-
+	<!-- Segurança tudo que estiver nesse caminho estará protegido -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Zona Protegida</web-resource-name>
+			<url-pattern>/protected/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>ADMIN</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<!-- FAla qual a pagina do login -->
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/login.xhtml</form-login-page>
+			<form-error-page>/erro-login.xhtml</form-error-page>
+		</form-login-config>
+	</login-config>
+	<!-- Cria os perfins -->
+	<security-role>
+		<role-name>ADMIN</role-name>
+	</security-role>
+	
+	
 </web-app>

@@ -2,11 +2,23 @@ package br.com.dextra.treinamento.model.domain;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CollectionTable;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+@Entity
 public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	private Long id;
 	private String login;
 	private String senha;
 	private String nome;
@@ -16,7 +28,20 @@ public class Usuario implements Serializable {
 
 	public Usuario() {
 	}
-
+	
+	private List<PermissaoUsuario> permissions; 
+	@Enumerated (EnumType.STRING)
+	@ElementCollection(targetClass=PermissaoUsuario.class)
+	@CollectionTable(name="usuario_permissao")
+	//@OneToMany(mappedBy="usuario" , fetch= FetchType.EAGER)
+	public List<PermissaoUsuario> getPermissions() {
+		return permissions;
+	}
+	
+	public void setPermissions(List<PermissaoUsuario> permissions) {
+		this.permissions = permissions;
+	}
+	
 	public Usuario(String usuario, String senha, String nome, String sobrenome,
 			String email, Date dataNasc) {
 		super();
@@ -27,8 +52,14 @@ public class Usuario implements Serializable {
 		this.email = email;
 		this.dataNasc = dataNasc;
 	}
-
-
+	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	public Long getId() {
+		return id;
+	}	
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getNome() {
 		return nome;
 	}

@@ -18,6 +18,7 @@ br/com/dextra/treinamento/model/service/SomaImpl.class
 br/com/dextra/treinamento/model/domain/Comentario.class
 br/com/dextra/treinamento/model/service/PostServiceImpl.class
 br/com/dextra/treinamento/timer/TimerServiceImpl.class
+br/com/dextra/treinamento/model/domain/PermissaoUsuario.class
 br/com/dextra/treinamento/webservice/WebServiceImpl.class
 br/com/dextra/treinamento/model/domain/GenericInterceptor.class
 br/com/dextra/treinamento/timer/TimerServiceLocal.class

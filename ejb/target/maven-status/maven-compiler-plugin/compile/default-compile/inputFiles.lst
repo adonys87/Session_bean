@@ -9,6 +9,7 @@
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/TesteStatelessImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/jms/BlogQueueImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/service/PostServiceLocal.java
+/home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/PermissaoUsuario.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/Usuario.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/timer/TimerServiceImpl.java
 /home/java02/workspace3/session_bean/ejb/src/main/java/br/com/dextra/treinamento/model/domain/GenericInterceptor.java
